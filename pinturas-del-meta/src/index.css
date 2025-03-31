@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap');
+
+:root {
+  --font-work-sans: 'Work Sans', sans-serif;
+}
+
+body {
+  color: rgb(var(--foreground));
+  background: rgb(var(--background));
+  font-family: var(--font-work-sans), sans-serif; /* Aplica la fuente globalmente */
+}
