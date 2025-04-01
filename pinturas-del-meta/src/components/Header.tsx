@@ -16,7 +16,7 @@ export default function Header() {
         {pages.map((page) => (
           <div
             key={page.id}
-            className="h-full px-12 flex-1 flex items-center justify-center hover:bg-red-500/20 transition-colors duration-200"
+            className="h-full px-12 flex-1 flex items-center justify-center hover:bg-red-900 transition-colors duration-200"
           >
             <button className="rounded-none p-0 whitespace-nowrap">
               {page.name}

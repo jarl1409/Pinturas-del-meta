@@ -12,24 +12,21 @@ export default function LandingPage() {
           </h2>
         </div>
         <div className="">
-          <img
-            src="/public/FotoFachadaPDM.png"
-            alt=""
-          />
+          <img src="/public/FotoFachadaPDM.png" alt="" />
         </div>
       </div>
-        <article className="bg-red-700  text-white flex flex-col justify-center items-center p-4 text-xl">
-          <p className="font-bold w-fit">
-            Encuentra las soluciones que Pinturas del Meta ofrece para tus
-            proyectos
-          </p>
-          <p className="w-fit text-center">
-            Descubre el productos ideal para pintar y hacer realidad sus
-            proyectos, en Pinturas del Meta le brindamos una <br /> completa linea de
-            productos de primera calidad y lo asesoramos en la correcta
-            seleccion de los mismos.
-          </p>
-        </article>
+      <article className="bg-red-900  text-white flex flex-col justify-center items-center p-4 text-xl">
+        <p className="font-bold w-fit">
+          Encuentra las soluciones que Pinturas del Meta ofrece para tus
+          proyectos
+        </p>
+        <p className="w-fit text-center">
+          Descubre el productos ideal para pintar y hacer realidad sus
+          proyectos, en Pinturas del Meta le brindamos una <br /> completa linea
+          de productos de primera calidad y lo asesoramos en la correcta
+          seleccion de los mismos.
+        </p>
+      </article>
     </>
   );
 }
