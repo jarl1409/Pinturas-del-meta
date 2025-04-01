@@ -13,7 +13,7 @@ export default function LandingPage() {
         </div>
         <div className="">
           <img
-            src="/public/Imagen de WhatsApp 2025-03-15 a las 09.18.43_45ea3747 1.png"
+            src="/public/FotoFachadaPDM.png"
             alt=""
           />
         </div>
