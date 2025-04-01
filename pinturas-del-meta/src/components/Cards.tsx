@@ -14,7 +14,7 @@ export default function Cards() {
             {/* Contenedor del texto superpuesto */}
             <div className="absolute inset-0 flex items-end justify-start">
               <h3 className="text-3xl font-semibold text-white p-4">
-                Arquitectura
+                Automotriz
               </h3>
             </div>
           </div>
