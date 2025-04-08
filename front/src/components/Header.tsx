@@ -8,13 +8,13 @@ export default function Header() {
   ];
 
   return (
-    <header className="bg-gray-950 w-full h-20 flex items-center justify-between text-white px-8">
+    <header className="bg-gray-950 w-full h-15 flex items-center justify-between text-white px-8">
       {/* Logo */}
       <div className="flex justify-center items-center h-full">
         <img
           src="/public/LogoPDM 1.png"
           alt="LogoPDM"
-          className="h-12 object-contain"
+          className="h-9 object-contain"
         />
       </div>
 
@@ -24,7 +24,7 @@ export default function Header() {
           <a
             key={page.id}
             href="#"
-            className="h-full px-6 flex items-center justify-center hover:bg-red-900 transition-colors duration-200"
+            className="h-full px-6 flex items-center justify-center hover:bg-red-900 transition-colors duration-200 text-xs"
           >
             {page.name}
           </a>
