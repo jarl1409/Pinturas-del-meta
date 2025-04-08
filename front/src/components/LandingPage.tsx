@@ -1,3 +1,7 @@
+import UbicacionCard from "./UbicacionCard";
+import Cards from "./Cards";
+import HorarioAtencion from "./HorarioAtencion";
+
 export default function LandingPage() {
   return (
     <>
@@ -5,24 +9,24 @@ export default function LandingPage() {
       <section className="relative w-full overflow-hidden min-h-[60vh]">
         <div className="flex flex-col md:flex-row h-full w-full">
           {/* Texto principal */}
-          <div className="flex flex-col justify-center px-6 lg:px-20 md:w-1/2 space-y-2 z-10 py-8 md:py-0">
-            <h1 className="font-extrabold text-2xl md:text-3xl leading-none uppercase italic">
+          <div className="flex flex-col justify-center px-4 sm:px-8 md:px-12 lg:px-20 md:w-1/2 space-y-4 z-10 py-8 md:py-0">
+            <h1 className="font-extrabold text-xl sm:text-2xl md:text-3xl lg:text-4xl leading-tight uppercase italic text-gray-900">
               Un nuevo concepto <br /> en pinturas
             </h1>
-            <h2 className="text-sm md:text-base leading-5 text-gray-800">
+            <h2 className="text-xs sm:text-sm md:text-base lg:text-lg leading-snug text-gray-800">
               Buscamos las últimas tecnologías en los sectores de repintado
               automotriz, protección industrial y pintura arquitectónica.
             </h2>
           </div>
 
           {/* Imagen con degradado */}
-          <div className="relative md:w-1/2 w-full flex items-center justify-center overflow-hidden group">
+          <div className="relative w-full md:w-1/2 flex items-center justify-center overflow-hidden group min-h-[300px] sm:min-h-[400px] md:min-h-[auto]">
             <img
               src="/FotoFachadaPDM.png"
               alt="Foto Fachada"
               className="w-full h-auto object-contain"
             />
-            <div className="absolute inset-0 bg-gradient-to-l from-transparent to-white transition-opacity duration-500 group-hover:opacity-0 pointer-events-none"></div>
+            <div className="hidden md:block absolute inset-0 bg-gradient-to-l from-transparent to-white transition-opacity duration-500 group-hover:opacity-0 pointer-events-none"></div>
           </div>
         </div>
       </section>
@@ -33,13 +37,16 @@ export default function LandingPage() {
           Encuentra las soluciones que Pinturas del Meta ofrece para tus
           proyectos
         </p>
-        <p className="text-center w-4xl text-base">
+        <p className="text-center text-[12px] sm:text-sm md:text-base lg:text-lg leading-snug max-w-4xl mx-auto px-4">
           Descubre el producto ideal para pintar y hacer realidad tus proyectos.
           En Pinturas del Meta te brindamos una completa línea de productos de
           primera calidad y te asesoramos en la correcta selección de los
           mismos.
         </p>
       </article>
+      <Cards />
+      <UbicacionCard />
+      <HorarioAtencion/>
     </>
   );
 }
