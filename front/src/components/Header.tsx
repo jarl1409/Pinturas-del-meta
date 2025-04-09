@@ -1,4 +1,8 @@
+// /pinturas-del-meta/front/src/components/Header.tsx
+
 import { useState } from "react";
+import { Link } from "react-router-dom";
+
 import { Menu, Search, X } from "lucide-react";
 
 export default function Header() {
@@ -15,26 +19,28 @@ export default function Header() {
 
   return (
     <>
-      <header className="bg-gray-950 w-full h-16 flex items-center justify-between text-white px-6 md:px-8">
+      <header className="bg-black w-full h-16 flex items-center justify-between text-white px-6 md:px-8">
         {/* Logo */}
         <div className="flex items-center h-full">
-          <img
-            src="/public/LogoPDM 1.png"
-            alt="LogoPDM"
-            className="h-9 object-contain"
-          />
+          <Link to="/" className="flex items-center h-full">
+            <img
+              src="/LogoPDM 1.png"
+              alt="LogoPDM"
+              className="h-9 object-contain"
+            />
+          </Link>
         </div>
 
         {/* Navegación (escritorio) */}
         <nav className="hidden md:flex h-full">
           {pages.map((page) => (
-            <a
+            <Link
               key={page.id}
-              href="#"
+              to={`/${page.id}`}
               className="h-full px-6 flex items-center justify-center hover:bg-red-900 transition-colors duration-200 text-xs"
             >
               {page.name}
-            </a>
+            </Link>
           ))}
         </nav>
 
@@ -69,14 +75,14 @@ export default function Header() {
             <X className="w-6 h-6" />
           </button>
           {pages.map((page) => (
-            <a
+            <Link
               key={page.id}
-              href="#"
+              to={`/${page.id}`}
               className="text-lg font-medium hover:text-red-400"
               onClick={() => setShowNav(false)}
             >
               {page.name}
-            </a>
+            </Link>
           ))}
         </div>
       )}
