@@ -8,12 +8,6 @@ export default function EnConstruccion() {
         Estamos trabajando para brindarte una mejor experiencia. Esta sección
         estará disponible pronto.
       </p>
-
-      <img
-        src="/construccion-ilustracion.svg"
-        alt="Página en construcción"
-        className="w-64 mt-8"
-      />
     </div>
   );
 }

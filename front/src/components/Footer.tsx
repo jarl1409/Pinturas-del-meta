@@ -1,6 +1,7 @@
 // /pinturas-del-meta/front/src/components/Footer.tsx
 
 import { Facebook, Instagram, Youtube, Mail, MapPin } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
@@ -8,11 +9,13 @@ export default function Footer() {
       <div className="max-w-screen-xl mx-auto flex flex-col gap-8 md:flex-row md:justify-between md:items-start">
         {/* Columna 1: Logo + redes */}
         <div className="flex flex-col items-center md:items-start gap-4">
-          <img
-            src="/LogoPDM 1.png"
-            alt="Logo"
-            className="h-12 object-contain"
-          />
+          <Link to="/" className="flex items-center h-full">
+            <img
+              src="/LogoPDM 1.png"
+              alt="Logo"
+              className="h-12 object-contain"
+            />
+          </Link>
 
           <div className="flex flex-col items-center md:items-start gap-2">
             <p className="text-sm font-semibold">Síguenos en redes:</p>
@@ -45,9 +48,12 @@ export default function Footer() {
         {/* Columna 2: Botón + ubicación */}
         <div className="text-center md:text-left flex flex-col gap-4 items-center md:items-start">
           {/* Botón Lista de precios */}
-          <button className="bg-red-600 text-white px-4 py-2 text-sm rounded-full hover:bg-red-700 transition">
+          <Link
+            to="/lista"
+            className="bg-red-600 text-white px-4 py-2 text-sm rounded-full hover:bg-red-700 transition text-center"
+          >
             Lista de precios
-          </button>
+          </Link>
 
           <div className="flex items-center gap-2">
             <MapPin className="w-5 h-5 text-white" />
