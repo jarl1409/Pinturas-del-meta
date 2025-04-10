@@ -71,24 +71,35 @@ export default function Footer() {
 
           {/* WhatsApp 1 */}
           <a
-            href="https://wa.me/573103770822"
+            href="https://wa.me/573105702782"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 hover:underline"
           >
             <WhatsAppIcon />
-            <span className="text-sm">+57 3103770822</span>
+            <span className="text-sm">+57 310 5702782</span>
           </a>
 
           {/* WhatsApp 2 */}
           <a
-            href="https://wa.me/573139435544"
+            href="https://wa.me/573193495544"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 hover:underline"
           >
             <WhatsAppIcon />
-            <span className="text-sm">+57 3139435544</span>
+            <span className="text-sm">+57 319 3495544</span>
+          </a>
+
+          {/* WhatsApp 3 */}
+          <a
+            href="https://wa.me/573108186735"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 hover:underline"
+          >
+            <WhatsAppIcon />
+            <span className="text-sm">+57 310 8186735</span>
           </a>
 
           {/* Email */}
